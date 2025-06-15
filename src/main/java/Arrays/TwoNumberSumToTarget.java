@@ -5,7 +5,7 @@ import java.util.Map;
 /**
  * TwoSum class provides a method to find indices of two numbers in an array that add up to a target value.
  * It includes a main method to test the functionality with predefined test cases.
- *
+ * <p>
  * Brief Description:
  *      Idea is to use a HashMap to store the numbers and their indices as we iterate through the array.
  *      When we find a number, we check if the complement (target - current number) exists in the map.
@@ -18,7 +18,7 @@ import java.util.Map;
  *      the method will return indices [0, 1] because nums[0] + nums[1] = 2 + 7 = 9.
  *
  */
-public class TwoSum {
+public class TwoNumberSumToTarget {
     public int[] twoSum(int[] nums, int target) {
         Map<Integer, Integer> numToIndex = new java.util.HashMap<>();
         for (int i = 0; i < nums.length; i++){
@@ -35,7 +35,7 @@ public class TwoSum {
     public static void main(String[] args) {
         int[][] testArrays = {{2, 7, 11, 15}, {-3, 4, 3, 90}, {3, 3, 4, 5}};
         int[] targets = {9, 0, 6};
-        TwoSum solver = new TwoSum();
+        TwoNumberSumToTarget solver = new TwoNumberSumToTarget();
 
         for (int i = 0; i < testArrays.length; i++) {
             int[] result = solver.twoSum(testArrays[i], targets[i]);
