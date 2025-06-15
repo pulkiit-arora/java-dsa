@@ -7,8 +7,7 @@ import java.util.List;
 public class ThreeNumberSumToTarget {
 
     /**
-     * This method finds all unique triplets in the array that sum up to the target value.
-     * It uses a HashSet to store unique triplets and returns them as an array.
+     *
      *
      * @param nums   the input array of integers
      * @param target the target sum for the triplets
